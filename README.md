@@ -128,7 +128,6 @@ pyinstaller --onedir --windowed --noupx --clean --uac-admin ^
 ### 5. Создание установщика (опционально)
 
 Если у вас установлен Inno Setup, сохраните скрипт installer_script.iss:
-ini
 
 ```
 [Setup]

@@ -79,10 +79,15 @@
 git clone https://github.com/iermiloff/OverlordMasqueVPN.git
 cd OverlordMasqueVPN
 
+```
+
 ### 2. Установка зависимостей
-bash
+
+```bash
 
 pip install customtkinter pyinstaller
+
+```
 
 ### 3. Подготовка ресурсов
 
@@ -95,7 +100,8 @@ icon.ico	На ваш выбор	256×256, ICO
     ❗ Важно: MASQUE появился в Xray относительно недавно (v26.x). Более старые версии не распознают протокол masque в конфиге и завершатся с ошибкой. Убедитесь, что скачиваете актуальный релиз.
 
 ### 4. Сборка .exe через PyInstaller
-bash
+
+```bash
 
 pyinstaller --onedir --windowed --noupx --clean --uac-admin ^
   --icon=icon.ico ^
@@ -103,6 +109,8 @@ pyinstaller --onedir --windowed --noupx --clean --uac-admin ^
   --add-data "wintun.dll;." ^
   --add-data "icon.ico;." ^
   --name "OverlordMasque" client.py
+
+```
 
 Ключевые флаги:
 
@@ -121,6 +129,7 @@ pyinstaller --onedir --windowed --noupx --clean --uac-admin ^
 Если у вас установлен Inno Setup, сохраните скрипт installer_script.iss:
 ini
 
+```
 [Setup]
 AppName=OverlordMasque
 AppVersion=1.0
@@ -145,6 +154,8 @@ Name: "desktopicon"; Description: "Создать ярлык на рабочем
 
 [Run]
 Filename: "{app}\OverlordMasque.exe"; Description: "Запустить OverlordMasque"; Flags: nowait postinstall skipifsilent
+
+```
 
 Затем нажмите F9 (Build → Compile). Установщик появится в installer_output\OverlordMasque_Setup.exe.
 🖥 Использование

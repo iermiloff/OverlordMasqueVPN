@@ -159,7 +159,8 @@ Filename: "{app}\OverlordMasque.exe"; Description: "Запустить OverlordM
 ```
 
 Затем нажмите F9 (Build → Compile). Установщик появится в installer_output\OverlordMasque_Setup.exe.
-🖥 Использование
+
+## 🖥 Использование
 
     Заполните поля:
 
